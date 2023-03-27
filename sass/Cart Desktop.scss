@@ -1,0 +1,470 @@
+@import 'reset';
+@import 'layout';
+@import 'grid';
+
+
+/* content */
+
+.content {
+	width: 100%;
+	display: flex;
+	@include ipad767(){
+		all: unset;
+		display: none;
+	}
+	.list {
+		width: 21%;
+		padding-left: 4.5%;
+		padding-top: 45px;
+		span {
+			font-size: 20px;
+			padding-left: 10px;
+		}
+		.product {
+			padding-top: 33px;
+			li {
+				color: $color2;
+				display: block;
+				border-bottom: 1px solid $color2;
+				line-height: 2;
+				padding-left: 5px;
+				transition: all .3s;
+				cursor: pointer;
+			}
+			li:hover {
+				background: $color2;
+				color: $color1;
+			}
+		}
+	}
+	.main {
+		width: 68%;
+		padding-top: 42px;
+		padding-left: 2%;
+		padding-right: 4.5%;
+		.main-top {
+			display: flex;
+			height: 34px;
+			position: relative;
+			.searchbar {
+				width: 65%;
+				height: 28px;
+				border: 2px solid $color2;
+				border-radius: 0;
+				background: $color1;
+			}
+			.searchbar:focus {
+				box-shadow: 0px 1px black;
+			}
+			.btn {
+				position: relative;
+				span {
+					color: white;
+					position: absolute;
+					top: 9px;
+					right: 9px;
+					cursor: pointer;
+				}
+				.submit-btn {
+					height: 34px;
+					width: 34px;
+					border-radius: 0;
+					background: $color2;
+					border: none;
+					cursor: pointer;
+				}
+			}
+			.checkout {
+				display: flex;
+				position: absolute;
+				right: 0;
+				@include ipad767(){
+					float: right;
+					display: flex;
+				}
+				li {
+					line-height: 34px;
+				}
+			}
+		}
+		.meal {
+			margin-top: 26px;
+			text-align: center;
+			h2 {
+				font-size: 20px;
+				padding-top: 15px;
+			}
+			h5 {
+				font-size: 12px;
+			}
+			.meal-list1{
+				float: left;
+				width: 31%;
+				height: 280px;
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+				position: relative;
+				margin-right: 3.5%;
+				span{
+					color: white;
+					position: absolute;
+					top: 5px;
+					left: 5px;
+					cursor: pointer;
+				}
+				img{
+					width: 100%;
+					height: auto;
+				}
+				h4 {
+					font-size: 14px;
+					font-weight: bold;
+					color: white;
+					background: #00CC99;
+					position: absolute;
+					top: 0;
+					right: 0;
+					padding: 5px;
+				}
+				.price {
+					position: absolute;
+					bottom: 55px;
+					left: 20%;
+					right: 20%;
+					border-top: 1px solid $color2;
+					padding-top: 16px;
+					font-size: 24px;
+					font-weight: 900;
+				}
+				.shopping-cart{
+					position: absolute;
+					bottom: 10px;
+					left: 10px;
+					right: 10px;
+					a {
+						color: #FF5E45;
+						border: 2px solid #FF5E45;
+						border-radius: 3px;
+						text-decoration: none;
+						display: block;
+						padding: 3px 0;
+					}
+				}
+			}
+			.meal-list2{
+				float: left;
+				width: 31%;
+				height: 280px;
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+				position: relative;
+				margin-right: 3.5%;
+				span{
+					color: white;
+					position: absolute;
+					top: 5px;
+					left: 5px;
+					cursor: pointer;
+				}
+				img{
+					width: 100%;
+					height: auto;
+				}
+				.price {
+					position: absolute;
+					bottom: 55px;
+					left: 20%;
+					right: 20%;
+					border-top: 1px solid $color2;
+					padding-top: 16px;
+					font-size: 24px;
+					font-weight: 900;
+				}
+				.shopping-cart{
+					position: absolute;
+					bottom: 10px;
+					left: 10px;
+					right: 10px;
+					a {
+						color: #FF5E45;
+						border: 2px solid #FF5E45;
+						border-radius: 3px;
+						text-decoration: none;
+						display: block;
+						padding: 3px 0;
+					}
+				}
+			}
+			.meal-list3{
+				float: left;
+				width: 31%;
+				height: 280px;
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+				position: relative;
+				span{
+					color: white;
+					position: absolute;
+					top: 5px;
+					left: 5px;
+					cursor: pointer;
+				}
+				img{
+					width: 100%;
+					height: auto;
+				}
+				.price {
+					position: absolute;
+					bottom: 55px;
+					left: 20%;
+					right: 20%;
+					border-top: 1px solid $color2;
+					padding-top: 16px;
+					font-size: 24px;
+					font-weight: 900;
+				}
+				.shopping-cart{
+					position: absolute;
+					bottom: 10px;
+					left: 10px;
+					right: 10px;
+					a {
+						color: #FF5E45;
+						border: 2px solid #FF5E45;
+						border-radius: 3px;
+						text-decoration: none;
+						display: block;
+						padding: 3px 0;
+					}
+				}
+			}
+			.meal-list4{
+				float: left;
+				width: 31%;
+				height: 280px;
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+				position: relative;
+				margin-top: 20px;
+				span{
+					color: white;
+					position: absolute;
+					top: 5px;
+					left: 5px;
+					cursor: pointer;
+				}
+				img{
+					width: 100%;
+					height: auto;
+				}
+				.price {
+					position: absolute;
+					bottom: 55px;
+					left: 20%;
+					right: 20%;
+					border-top: 1px solid $color2;
+					padding-top: 16px;
+					font-size: 24px;
+					font-weight: 900;
+				}
+				.shopping-cart{
+					position: absolute;
+					bottom: 10px;
+					left: 10px;
+					right: 10px;
+					a {
+						color: #FF5E45;
+						border: 2px solid #FF5E45;
+						border-radius: 3px;
+						text-decoration: none;
+						display: block;
+						padding: 3px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.select {
+	color: $color1 !important;
+	background: $color2;
+}
+
+.favorite .meal span {
+	font-weight: bold;
+}
+
+.mobile {
+	display: none;
+	@include ipad767(){
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.top-bar{
+		@include ipad767(){
+			width: 91%;
+			padding: 45px 4.5% 25px 4.5%;
+		}
+		span{
+			@include ipad767(){
+				font-size: 20px;
+				padding-left: 10px;
+			}
+		}
+	}
+	.mobile-list{
+		@include ipad767(){
+			display: flex;
+			width: 90%;
+			margin: 0 5%;
+		}
+		li{
+			@include ipad767(){
+				width: 25%;
+				display: block;
+				text-align: center;
+				background: $color2;
+				color: $color1;
+				border: 1px solid $color1;
+				padding: 5px 0;
+				cursor: pointer;
+				transition: all .3s;
+			}
+		}
+		li:hover{
+			@include ipad767(){
+				background: $color1;
+				color: $color2 !important;
+				border: 1px solid $color2;
+			}
+		}
+	}
+	.mobile-meal{
+		@include ipad767(){
+			padding-top: 30px;
+			text-align: center;
+		}
+		span{
+			@include ipad767(){
+				color: white;
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				cursor: pointer;
+			}
+		}
+		.price{
+			@include ipad767(){
+				bottom: 55px;
+				padding-top: 16px;
+				font-size: 24px;
+				font-weight: 900;
+			}
+		}
+		.meal-list1{
+			@include ipad767(){
+				float: left;
+				width: 31%;
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+				position: relative;
+			}
+			@include ipad600(){
+				width: 40%;
+				margin-left: 7.5%;
+				margin-right: 2.5%;
+			}
+			@include ipad475(){
+				width: 80%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+			h4{
+				@include ipad767(){
+					font-size: 14px;
+					font-weight: bold;
+					color: white;
+					background: #00CC99;
+					position: absolute;
+					top: 0;
+					right: 0;
+					padding: 5px;
+				}
+			}
+		}
+		.meal-list2{
+			@include ipad767(){
+				float: left;
+				width: 31%;
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+				position: relative;
+			}
+			@include ipad600(){
+				width: 40%;
+				margin-left: 2.5%;
+				margin-right: 7.5%;
+			}
+			@include ipad475(){
+				width: 80%;
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-top: 20px;
+			}
+		}
+		.meal-list3{
+			@include ipad767(){
+				float: left;
+				width: 31%;
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+				position: relative;
+			}
+			@include ipad600(){
+				width: 40%;
+				margin-left: 7.5%;
+				margin-right: 2.5%;
+				margin-top: 20px;
+			}
+			@include ipad475(){
+				width: 80%;
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-top: 20px;
+			}
+		}
+		.meal-list4{
+			@include ipad767(){
+				float: left;
+				width: 31%;
+				box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+				position: relative;
+			}
+			@include ipad600(){
+				width: 40%;
+				margin-left: 2.5%;
+				margin-right: 7.5%;
+			}
+			@include ipad475(){
+				width: 80%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+		}
+	}
+}
+
+.mobile-select{
+	@include ipad767(){
+		color: $color2 !important;
+		background: $color1 !important;
+	}
+}
+
+.favorite .mobile-meal span {
+	@include ipad767(){
+		font-weight: bold;
+	}
+}
+
+
+/* clearfix */
+
+.clearfix {
+	clear: both;
+}

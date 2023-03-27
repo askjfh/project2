@@ -1,0 +1,17 @@
+@mixin ipad767{
+    @media (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin ipad600{
+    @media (max-width:600px) {
+        @content;
+    }
+}
+
+@mixin ipad475{
+    @media (max-width:475px) {
+        @content;
+    }
+}

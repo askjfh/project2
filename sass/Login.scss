@@ -1,0 +1,134 @@
+@import 'reset';
+@import 'layout';
+
+
+/* login */
+
+.login {
+	width: 100%;
+	color: $color2;
+	h2 {
+		font-size: 48px;
+		text-align: center;
+		font-weight: 900;
+		padding-top: 50px;
+	}
+	p {
+		font-size: 20px;
+		text-align: center;
+		font-weight: 900;
+		padding-top: 5px;
+		padding-bottom: 35px;
+	}
+	.login-type {
+		width: 30%;
+		height: 273px;
+		margin-left: 35%;
+		margin-right: 35%;
+		border-top: 3px solid #FF5E45;
+		box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+		margin-bottom: 40px;
+		@media (max-width:767px){
+			width: 70%;
+			margin: 0 auto;
+			margin-bottom: 40px;
+		}
+		h5 {
+			font-size: 18px;
+			text-align: center;
+			font-weight: 900;
+			padding-top: 12px;
+			padding-bottom: 16px;
+		}
+		.container {
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+			position: relative;
+			.icon{
+				font-weight: 900;
+				position: relative;
+				display: inline-block;
+			}
+			i{
+				position: absolute;
+				top: 26px;
+				left: 8px;
+			}
+			.push1 {
+				margin-top: 3px;
+				width: 96%;
+				height: 28px;
+				margin-bottom: 15px;
+				background: #FFFFFF;
+				border: 1px solid #CCCCCC;
+				box-shadow: 0px 1px 0px 0px #ECECEC;
+				border-radius: 3px;
+			}
+			span{
+				position: absolute;
+				top: 65px;
+				left: 1px;
+			}
+			.push2 {
+				margin-top: 3px;
+				width: 96%;
+				height: 28px;
+				margin-bottom: 3px;
+				background: #FFFFFF;
+				border: 1px solid #CCCCCC;
+				box-shadow: 0px 1px 0px 0px #ECECEC;
+				border-radius: 3px;
+			}
+			.push1:hover{
+				background: $color1;
+				box-shadow: 0px 0px 10px $color2;
+			}
+			.push2:hover{
+				background: $color1;
+				box-shadow: 0px 0px 10px $color2;
+			}
+			a {
+				text-decoration: none;
+				color: #FF5E45;
+				font-size: 14px;
+			}
+		}.btn {
+			width: 90%;
+			margin: 40px 5% 0 5%;
+			position: relative;
+			.sign-up {
+				width: 45%;
+				padding: 6px 0;
+				color: #fff;
+				background: #a09e9e;
+				border-width: 1px;
+				border-color: #CCCCCC;
+				border-radius: 3px;
+				position: absolute;
+				left: 0;
+				cursor: pointer;
+			}
+			.log-in {
+				width: 45%;
+				padding: 6px 0;
+				color: #fff;
+				background: #f56c23;
+				border-width: 1px;
+				border-color: #CCCCCC;
+				border-radius: 3px;
+				position: absolute;
+				right: 0;
+				cursor: pointer;
+			}
+			.sign-up:hover{
+				background: $color2;
+				color: $color1;
+			}
+			.log-in:hover{
+				background: $color2;
+				color: $color1;
+			}
+		}
+	}
+}
